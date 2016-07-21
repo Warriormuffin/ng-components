@@ -1,7 +1,13 @@
 <div>
   <h3>Calculator Component</h3>
     {{$ctrl.myFavNum}}
+    <button ng-click="$ctrl.clear">Clear Calc</button>
     <h4>Child Components Show up below here</h4>
     <addition-component bwa="$ctrl.myFavNum" formula="$ctrl.addX"></addition-component>
+    <subtraction-component bwa="$ctrl.myFavNum" formula="$ctrl.subX"></subtraction-component>
+    <multiplication-component bwa="$ctrl.myFavNum" formula="$ctrl.multX"></multiplication-component>
+    <division-component bwa="$ctrl.myFavNum" formula="$ctrl.divX"></division-component>
+
+
 
 </div>
